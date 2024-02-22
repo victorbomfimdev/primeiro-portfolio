@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+<!-- Define o idioma padrão do contéudo que será escrito no código. (Auxilia na acessibilidade e na busca dos usuários) -->
+
+<head>
+    <!-- HEAD: meta-informações sobre o documento HTML. Essas informações geralmente não são exibidas diretamente na página, mas fornecem informações importantes para o navegador, motores de busca e outros agentes de usuário. -->
+    <meta charset="UTF-8">
+    <!-- Define o UTF-8 como o conjunto de caracteres a ser usado. Padrão de codificação de caracteres que suporta uma ampla gama de caracteres, incluindo os especiais e a maioria utilizada em diferentes idiomas. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define um dimensionamento para dispositivos móveis. Definindo uma adaptabilidade de largura de acordo com a dimensão da tela, como também o zoom 1.0 conforme a dimensão da tela do dispositivo.-->
+    <title>Portfolio</title>
+    <!-- TITLE:Define o título da página HTML. Também é usado como o título padrão quando alguém salva a página como favorito ou a adiciona aos marcadores. -->
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- Importa um documento "stylesheet" que no caso é o nosso "styles.css" que está no diretório "CSS"-->
+</head>
+
+<body>
+    <!-- Contém todo o corpo do site sendo o contéudo desde o cabeçalho (header), navegação (nav), conteúdo principal (main), seções (sections), rodapé(footer) -->
+    <header class="cabecalho">
+        <!-- Define um cabeçalho ou uma seção de cabeçalho em um documento HTML. -->
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <!-- MAIN: Usada para conter o conteúdo principal de um documento HTML. No nosso caso, faz referência a uma classe ("class") nomeada de "apresentacao" de um arquivo CSS. -->
+        <section class="apresentacao__conteudo">
+            <!-- SECTION: Define seções em um documento HTML. Ela é geralmente usada para agrupar conteúdo relacionado semanticamente, o que pode incluir cabeçalhos, parágrafos, imagens, etc. -->
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio empresarial a outro nível <strong
+                    class="titulo-destaque">com um desenvolvedor de qualidade!</strong></h1>
+                    <!-- Sobre "H1": Define o título principal de uma seção, página ou afins. Sucessivamente h2, h3, h4, h5, h6 vão regredindo hierarquicamente. Uma boa prática é utilizar apenas um H1 por página e H2 caso existam outros títulos relevantes na página. -->
+                    <!--                                                                                                                     -->
+                    <!-- Sobre "strong": Define que o texto contido dentro dela é semanticamente forte ou importante. As ferramentas de busca podem dar peso as palavras dentro do strong. E visualmente, pode ocorrer a diferenciação em negrito. -->
+            <p class="apresentacao__conteudo__texto">Olá! Sou Víctor Bomfim, desenvolvedor de automações e futuro back-end com especialidade
+                em <strong>Python no framework Django.</strong> Estou em busca de um estágio na área de Tecnologia da informação. Vamos conversar?</p>
+                <!-- <P>:Define parágrafos.Evite usar quebras de linha (<br>) para criar espaçamento entre linhas de texto; em vez disso, use parágrafos. -->
+            <div class="apresentacao__links">
+                <!-- DIV: usado para agrupar outros elementos HTML e aplicar estilos ou scripts a eles. -->
+                <h2 class="apresentacao__links__substitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__links__navegacao" href="https://www.instagram.com/victorbomfim_/">
+                    <!--  A: é usada para criar hiperlinks ou âncoras. Hiperlinks são elementos clicáveis que direcionam o usuário para outra página da web, arquivo, ou recurso online. HREF: referencia o link ao qual a <a> vai direcionar. -->
+                    <img src="./assets/instagram.png" alt="Ícone Instagram">
+                    <!--  IMG: Importa uma imagem definida em "SRC" que busca no diretório ASSETS a imagem INSTAGRAM.PNG e "ALT" nomeia a imagem caso ocorra algum erro de carregamento.  -->
+                    Instagram</a>
+                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/v%C3%ADctor-bomfim-32b631250/">
+                    <img src="./assets/linkedin.png" alt="Ícone Linkedin">Linkedin</a>
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/perfil_profissional (1).png" alt="Víctor Bomfim">
+    </main>
+    <footer class="rodape">
+        <!--  Define o rodapé de uma página ou de uma seção específica de uma página web. O rodapé geralmente contém informações de contato, links para páginas relacionadas, direitos autorais, ou outros elementos que são relevantes para o final do conteúdo. -->
+        <p>Desenvolvido por Víctor Bomfim.</p> 
+    </footer>
+
+</body>
+
+</html>
